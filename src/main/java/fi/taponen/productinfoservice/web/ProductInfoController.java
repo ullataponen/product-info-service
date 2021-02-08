@@ -20,7 +20,7 @@ public class ProductInfoController {
 	
 	@RequestMapping("/{productId}")
 	public Product getProductInfo(@PathVariable("productId") long productId) {
-		ProductSummary productSummary = restTemplate.getForObject("http://localhost:8082/api/products/" + productId, ProductSummary.class);
+		ProductSummary productSummary = restTemplate.getForObject("https://arcane-reef-64898.herokuapp.com/api/products/" + productId, ProductSummary.class);
 	
 		return new Product(productId, productSummary.getName(), productSummary.getManufacturer());
 	}
