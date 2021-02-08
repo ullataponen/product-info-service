@@ -29,10 +29,14 @@ public class ProductInfoServiceApplication {
 			Product p1 = new Product("Hammer", "Fiskars");
 			Product p2 = new Product("Electric drill", "Makita");
 			Product p3 = new Product("Knife", "Marttiini");
+			Product p4 = new Product("Chainsaw", "Bosch");
+			Product p5 = new Product("Lawnmower", "John Deere");
 			
 			repository.save(p1);
 			repository.save(p2);
 			repository.save(p3);
+			repository.save(p4);
+			repository.save(p5);
 		};
 	}
 
